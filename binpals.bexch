@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__binpals.o
+[PROJECT FILES]
+G:\School\ITEC320\p1_2017\binpals.gpr
+20170131200814
+[BOUND OBJECT FILES]
+G:\School\ITEC320\p1_2017\binpals.o
+[GENERATED SOURCE FILES]
+b__binpals.ads
+b__binpals.adb
+b__binpals.ali
+[RESULTING OPTIONS]
+-LG:\School\ITEC320\p1_2017\
+-LG:\School\ITEC320\p1_2017\
+-LC:/gnat/2016/lib/gcc/i686-pc-mingw32/4.9.4/adalib/
+-static
+-static-libgcc
+C:/gnat/2016/lib/gcc/i686-pc-mingw32/4.9.4/adalib/libgnat.a
+-Wl,--stack=0x2000000

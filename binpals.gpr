@@ -1,0 +1,10 @@
+project Binpals is
+
+   package Ide is
+      for Vcs_Kind use "Git";
+   end Ide;
+
+   for Main use ("binpals.adb");
+
+end Binpals;
+
