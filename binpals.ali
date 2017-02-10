@@ -14,7 +14,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U binpals%b		binpals.adb		3695c8e0 NE OO SU
+U binpals%b		binpals.adb		eec26c29 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -36,7 +36,7 @@ D a-timoau.ads		20160516092932 01c06610 ada.text_io.modular_aux%s
 D a-timoio.ads		20160516092928 d32407b9 ada.text_io.modular_io%s
 D a-timoio.adb		20160516092932 de0ea1c6 ada.text_io.modular_io%b
 D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
-D binpals.adb		20170210183858 f8b3b490 binpals%b
+D binpals.adb		20170210225350 20e41059 binpals%b
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
 D system.ads		20160516092930 2da59038 system%s
@@ -52,24 +52,48 @@ D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 19e8 13|5r6 5r23 6r6 6r31 16r28
+16K9*Ada 19e8 13|20r6 20r23 21r6 21r31 29r28
 X 3 a-inteio.ads
-18K13*Integer_Text_IO[8|46] 13|6w10 6r35
+18K13*Integer_Text_IO[8|46] 13|21w10 21r35
 X 7 a-textio.ads
-49K13*Text_IO 471e16 13|5w10 5r27 16r32
-166U14*New_Line 13|30s25 31s36 32s36 33s36
-242U14*Put 13|25s7 26s7 27s7 28s7 29s7 30s7 31s7 32s7 33s7
+49K13*Text_IO 471e16 13|20w10 20r27 29r32
+166U14*New_Line 13|152s35 156s61
+242U14*Put 13|47s7 49s7 65s13 68s13 81s10 83s10 114s7 116s7
 X 10 a-timoio.ads
-44M9 Num 13|16r52
-46k21*Modular_IO 85e27 13|16r40
-56U14 Get 13|45s4[16] 48s7[16]
+46k21*Modular_IO 85e27 13|29r40
+56U14 Get 13|141s4[29] 146s7[29]
+66U14 Put 13|48s7[29] 115s7[29] 131s10[29]
 X 13 binpals.adb
-10U11*Binpals 10b11 68t4
-13M9 UNS32 16r59 20r31 23r31 38r20 39r15
-16K12 UNS32_IO[10|46] 17r8
-20U14 Print 20>20 23b14 34l8 34t13 50s7
-20m20 Original{13M9} 23b20
-38m4 Data_Set_Size{13M9} 45m8 47r18
-39m4 Original{13M9} 48m11 50r13
-47m8 I{13M9}
+23U11*Binpals 23b11 163t4
+26M9 UNS32 29r52 33r40 34r38 35r37 35r51 36r42 37r40 38r56 44r40 56r38 57r16
+. 58r19 59r20 78r42 92r37 92r51 93r20 94r19 95r18 112r40 123r56 124r20 125r19
+. 136r20 137r15
+29K12 UNS32_IO[10|46] 30r8
+33U14 PrintOriginal 33>29 44b14 50l8 50t21 148s7
+33m29 Original{26M9} 44b29 48r11
+34U14 PrintBinary 34>27 56b14 72l8 72t19 150s7
+34m27 Original{26M9} 56b27 57r25
+35V13 GetReversed{26M9} 35>26 80s21 92b13 106l8 106t19 154s21 156s37
+35m26 Original{26M9} 92b26 93r29
+36U14 CheckPalindrome 36>31 78b14 85l8 85t23 152s7
+36m31 Original{26M9} 78b31 80r10 80r33
+37U14 PrintReversed 37>29 112b14 117l8 117t21 154s7
+37m29 Reversed{26M9} 112b29 115r11
+38U14 PrintReversedBinary 38>35 38>45 123b14 133l8 133t27 156s7
+38m35 Original{26M9} 123b35 124r29
+38m45 Reversed{26M9} 123b45
+57m7 Binary{26M9} 64r13 66m13 66r23
+58m7 Remainder{26M9}
+59m7 Binary_Bin{26M9} 63m10 64r23 66r32
+62i11 I{integer} 63r35
+93m7 Binary_Bin{26M9} 99r23 100m10 100r24
+94m7 Remainder{26M9} 99m10 101r13
+95m7 Reversed{26M9} 102m13 102r25 105r14
+98i11 I{integer} 102r47
+124m7 Binary_Bin{26M9} 129r23 130m10 130r24
+125m7 Remainder{26M9} 129m10 131r14
+128i11 I{integer}
+136m4 Data_Set_Size{26M9} 141m8 144r18
+137m4 Original{26M9} 146m11 148r21 150r19 152r23 154r33 156r27 156r49
+144m8 I{26M9}
 
