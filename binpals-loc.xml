@@ -1,83 +1,60 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project >
-    <file_marker column=" 6" line=" 64" >
+  <Project>
+    <vfs_file>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_file>
+    <file_marker column=" 11" line=" 26" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 49" >
+    <file_marker column=" 21" line=" 16" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 21" line=" 61" >
+    <file_marker column=" 34" line=" 5" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 49" >
+    <file_marker column=" 21" line=" 16" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 8" >
+    <file_marker column=" 51" line=" 6" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 10" >
+    <file_marker column=" 1" line=" 49" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\2016\lib\gcc\i686-pc-mingw32\4.9.4\adainclude\a-textio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 16" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 8" >
+    <file_marker column=" 8" line=" 17" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 6" line=" 64" >
+    <file_marker column=" 1" line=" 30" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 8" >
+    <file_marker column=" 21" line=" 16" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 10" >
+    <file_marker column=" 1" line=" 49" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\2016\lib\gcc\i686-pc-mingw32\4.9.4\adainclude\a-textio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 17" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 59" line=" 12" >
+    <file_marker column=" 28" line=" 16" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 49" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 6" line=" 64" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 49" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 64" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 49" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 64" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 49" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 64" >
-      <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
-      <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 4" line=" 49" >
+    <file_marker current="true" column=" 4" line=" 26" >
       <vfs_project>G:\School\ITEC320\p1_2017\binpals.gpr</vfs_project>
       <vfs_file>G:\School\ITEC320\p1_2017\binpals.adb</vfs_file>
     </file_marker>

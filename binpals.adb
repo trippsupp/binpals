@@ -2,71 +2,67 @@
 -- Date: January 29, 2017
 -- Course: ITEC 320
 
-with Ada.Text_Io; use Ada.Text_Io;
+with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 
 
 procedure Binpals is
-   type Unsigned_N is mod 2**5; -- mod 32 ???
 
-   function ConvertToBinary(OriginalTemp : Integer) return Integer;
-   procedure print(Original : in Integer);
+   -- A type for Unsigned 32 bit integers
+   type UNS32 is mod 2**32;
+
+   -- Must create an I/O package for UNS32
+   package UNS32_IO is new Ada.Text_IO.Modular_IO (Num => UNS32);
+   use UNS32_IO;
+
+   -- procedure / function declarations
+   procedure Print(Original : Uns32);
 
    -- new procedures / functions here
-
-
-
-
-   -- Converts and returns the 32 bit binary form of the given decimal number
-   function ConvertToBinary(OriginalTemp : Integer) return Integer is
-      Original : Integer := OriginalTemp;
-      Binary : Integer := 0;
-      Remainder : Integer;
-      Binary_Temp : Integer := 1;
+   procedure Print(Original : Uns32) is
    begin
-      while Original >= 1 loop
-         Remainder := Original mod 2;
-         Original := Original / 2;
-         if Remainder = 1 then
-            Binary := Binary + Binary_Temp;
-         end if;
-         Binary_Temp := Binary_Temp * 10;
-      end loop;
-      return Binary;
-   end ConvertToBinary;
-
-
-   -- prints the resulting output for each data set
-   procedure Print(Original : in Integer) is
-   begin
-      Put("Original:");
+      Put("Original:           ");
+      Put("1073741824");
+      Put("  ");
+      Put("00000000000000000000000000000010");
+      Put(" ");
+      Put("Different"); New_Line;
+      Put("Rev     :           "); New_Line;
+      Put("Pruned  :           "); New_Line;
+      Put("Rev     :           "); New_Line;
    end Print;
 
 
-   Data_Set_Size : Integer; -- size of the data set
-   Original : Integer; -- original decimal number scanned
-   Bin_Original : Integer; -- original decimal number in 32 bit binary form
+   -- Main variables
+   Data_Set_Size : Uns32;
+   Original : Uns32;
+   --Temp : Uns32;
+   --X : Uns32;
 
 
 begin
-   Get(Original); -- get the size of the data set
+   Get(Data_set_Size);
 
-   Bin_Original := ConvertToBinary(Original);
-   Put("binary of input is: ");
-   Put(Bin_Original); New_Line;
+   for I in 1 .. Data_Set_Size loop
+      Get(Original);
 
-  -- for I in 1 .. Data_set_size loop
-  --    Get(Original);
+      Print(Original);
 
-      -- bin_Original := ConvertToBinary(original);
-  --    Put("findBinary(5) = "); New_Line;
-  --    Put(FindBinary(5)); New_Line;
+   end loop;
 
-      -- bin_Reversed := findReversed(bin_Original);
 
-      --Print(Original);
+
+
+   -- loop for each data set
+  -- for I in 1 .. 32 loop
+
+  --    Temp := X mod 2;
+  --    Put(Temp, 1);
+  --    X := X / 2;
 
   -- end loop;
+
+
 
 end;
