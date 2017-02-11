@@ -44,7 +44,7 @@ procedure Binpals is
    procedure PrintReversedBinary (Original, Reversed : UNS32);
    function GetPrunedDecimal(Original : UNS32) return UNS32;
    procedure PrintPruned (Pruned : UNS32);
-   procedure PrintPrunedBinary (Original, Pruned : UNS32);
+   procedure PrintPrunedBinary (Original : UNS32);
    function GetPrunedReversedDecimal(Original : UNS32) return UNS32;
    procedure PrintPrunedReversed (PrunedReversed : UNS32);
    procedure PrintPrunedreversedBinary (Original : UNS32);
@@ -192,7 +192,7 @@ procedure Binpals is
    -- Purpose: Prints the pruned binary value of the given decimal
    -- Parameters: Original: decimal value to print the binary of
    ----------------------------------------------------------------
-   procedure PrintPrunedBinary (Original, Pruned : UNS32) is
+   procedure PrintPrunedBinary (Original : UNS32) is
       Binary : UNS32 := Original;
       Binary_Bin : UNS32 := 0;
       NumOfZeros : UNS32 := 0;
@@ -313,7 +313,7 @@ begin
       -- Print the Pruned decimal
       PrintPruned(GetPrunedDecimal(Original));
       -- printPrunedBinary
-      PrintPrunedBinary(Original, GetPrunedDecimal(Original));
+      PrintPrunedBinary(GetPrunedDecimal(Original));--, GetPrunedDecimal(Original));
       -- set column for comparison text
       Set_Col(To => 55);
       -- checks to see if the values are the same
