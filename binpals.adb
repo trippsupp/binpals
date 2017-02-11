@@ -11,7 +11,7 @@
 --  2
 --  2
 -- 13
---  Sample output:
+-- Sample output:
 -- Original:          2  00000000000000000000000000000010 Different
 -- Reversed: 1073741824  01000000000000000000000000000000
 -- Pruned  :          1  1                                Same
@@ -67,7 +67,7 @@ procedure Binpals is
    -----------------------------------------------------------------
    procedure PrintBinary (Original : UNS32) is
       Binary : UNS32 := Original;
-      Binary_Bin : Uns32 := 0;
+      Binary_Bin : Uns32 := 0; -- placeholder
    begin
       -- loop to print binary value
       for I in 1 .. 32 loop
@@ -100,7 +100,7 @@ procedure Binpals is
    -- Postcondition: Returns the reversed value of original
    ---------------------------------------------------------
    function GetReversed (Original : UNS32) return UNS32 is
-      Binary_Bin : UNS32 := Original;
+      Binary_Bin : UNS32 := Original; -- placeholder
       Bit : UNS32 := 0; -- represents a bit
       Reversed : UNS32 := 0; -- reversed decimal value
    begin
@@ -152,8 +152,8 @@ procedure Binpals is
       Pruned : UNS32 := 0; -- the decimal value of the pruned binary value
       Bit : UNS32 := 0; -- represents a bit
       NumOfZeros : UNS32 := 0; -- running count of zeros
-      CheckZeros : UNS32 := 0; -- a check to continue loops
-      Pwr : Natural := 0; -- power must be type natural?
+      LeadingZeros : UNS32 := 0;
+      Pwr : Integer := 0; -- power must be type natural?
                           -- type UNS32 will not work for ** operation
    begin
       -- loop through entire binary value
@@ -161,13 +161,13 @@ procedure Binpals is
          Bit := Binary mod 2; -- gives you the remainder
          -- if the bit (remainder) is 1
          if Bit = 1 then
-            if CheckZeros = 0 then
+            if LeadingZeros = 0 then
                NumOfZeros := 0; -- count of zeros is set to 0
                Pwr := 0; -- power is set to 0
             end if;
             Pruned := Pruned + (2**Pwr); -- sum pruned decimal value
             NumOfZeros := 0; -- reset the number of zeros
-            CheckZeros := 1;
+            LeadingZeros := 1;
          else
             NumOfZeros := NumOfZeros+1;
          end if;
@@ -194,14 +194,14 @@ procedure Binpals is
    ----------------------------------------------------------------
    procedure PrintPrunedBinary (Original : UNS32) is
       Binary : UNS32 := Original;
-      Binary_Bin : UNS32 := 0;
+      Binary_Bin : UNS32 := 0; -- placeholder
       NumOfZeros : UNS32 := 0;
-      CheckZeros : UNS32 := 0;
+      LeadingZeros : UNS32 := 0;
    begin
       for I in 1 .. 32 loop
          Binary_Bin := (2**(abs(I-32)));
          if Binary >= Binary_Bin then
-            if CheckZeros = 0 then
+            if LeadingZeros = 0 then
                NumOfZeros := 0;
             end if;
             for Ii in 1 .. NumOfZeros loop
@@ -209,7 +209,7 @@ procedure Binpals is
             end loop;
             Put("1");
             NumOfZeros := 0;
-            CheckZeros := 1;
+            LeadingZeros := 1;
             Binary := Binary - Binary_Bin;
          else
             NumOfZeros := NumOfZeros+ 1;
@@ -226,8 +226,8 @@ procedure Binpals is
       PrunedReversed : UNS32 := 0; -- pruned reversed value
       Binary : UNS32 := Original; -- binary value
       Count : UNS32 := 0; -- count
-      Binary_Bin : UNS32 := 0; -- binary bin to hold remainder
-      Pwr : Natural := 0; -- needed for ** operation
+      Binary_Bin : UNS32 := 0; -- binary bin to act as placeholder
+      Pwr : Integer := 0; -- needed for ** operation
    begin
       -- loop entire 32 bit integer
       for I in 1 .. 32 loop
@@ -261,29 +261,26 @@ procedure Binpals is
    -- Parameters: Original: decimal value to print the binary of
    ---------------------------------------------------------------------------
    procedure PrintPrunedreversedBinary (Original : UNS32) is
-      Bit : UNS32 := 0;
-      Binary : UNS32 := Original;
-      NumOfZeros : UNS32 := 0;
-      CheckZeros : UNS32 := 0;
-      Pwr : Natural := 0; -- need natural for ** operation
+      Bit : UNS32 := 0; -- represents a bit
+      Binary : UNS32 := Original; -- original number
+      NumOfZeros : UNS32 := 0; -- number of zeros
+      LeadingZeros : UNS32 := 0; -- number of leading zeros
    begin
       for I in 1 .. 32 loop
          Bit := Binary mod 2;
          if Bit = 1 then
-            if CheckZeros = 0 then
+            if LeadingZeros = 0 then
                NumOfZeros := 0;
-               Pwr := 0;
             end if;
             for Ii in 1 .. NumOfZeros loop
                Put("0");
             end loop;
             Put("1");
             NumOfZeros := 0;
-            CheckZeros := 1;
+            LeadingZeros := 1;
          else
             NumOfZeros := NumOfZeros +1;
          end if;
-         Pwr := Pwr + 1;
          Binary := Binary / 2;
       end loop;
    end Printprunedreversedbinary;
@@ -313,7 +310,7 @@ begin
       -- Print the Pruned decimal
       PrintPruned(GetPrunedDecimal(Original));
       -- printPrunedBinary
-      PrintPrunedBinary(GetPrunedDecimal(Original));--, GetPrunedDecimal(Original));
+      PrintPrunedBinary(GetPrunedDecimal(Original));
       -- set column for comparison text
       Set_Col(To => 55);
       -- checks to see if the values are the same
@@ -322,7 +319,7 @@ begin
       -- print pruned dreversed decimal
       PrintPrunedReversed(GetPrunedReversedDecimal(Original));
       -- print pruned reversed binary
-      PrintPrunedreversedBinary(Original); New_Line(2);
+      PrintPrunedreversedBinary(Original); New_Line(3);
    end loop;
 
 end;
