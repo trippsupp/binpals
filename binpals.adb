@@ -156,6 +156,7 @@ begin
       PrintReversed(GetReversed(Original));
       -- print the reversed binary value
       PrintReversedBinary(Original, GetReversed(Original)); New_Line;
+      Set_Col(To => 54); CheckPalindrome(Original);
 
    end loop;
 
