@@ -1,8 +1,7 @@
 V "GNAT Lib v2016"
 M P W=b
-A -gnatA
-A -mtune=generic
-A -march=pentium4
+A -gnatwu
+A -gnat05
 P ZX
 
 RN
@@ -11,10 +10,9 @@ RV NO_EXCEPTIONS
 RV NO_IO
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
-RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U binpals%b		binpals.adb		2543abcd NE OO SU
+U binpals%b		binpals.adb		436b6c8a NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -36,7 +34,7 @@ D a-timoau.ads		20160516092932 01c06610 ada.text_io.modular_aux%s
 D a-timoio.ads		20160516092928 d32407b9 ada.text_io.modular_io%s
 D a-timoio.adb		20160516092932 de0ea1c6 ada.text_io.modular_io%b
 D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
-D binpals.adb		20170211041714 eb65d7bd binpals%b
+D binpals.adb		20170211082650 8d4d10fa binpals%b
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
 D system.ads		20160516092930 2da59038 system%s
@@ -64,12 +62,15 @@ X 7 a-textio.ads
 187i23 To{68I12} 13|315r15
 242U14*Put 13|59s7 61s7 76s13 79s13 91s10 93s10 124s7 126s7 186s7 188s7 208s16
 . 210s13 254s7 256s7 276s16 278s13
+263U14*Put_Line 13|326s26 327s25 329s7 330s22
+297X4*End_Error 13|327r12
+298X4*Data_Error 13|326r12
 X 10 a-timoio.ads
 46k21*Modular_IO 85e27 13|35r40
 56U14 Get 13|294s4[35] 299s7[35]
 66U14 Put 13|60s7[35] 125s7[35] 141s10[35] 187s7[35] 255s7[35]
 X 13 binpals.adb
-29U11*Binpals 29b11 325t4
+29U11*Binpals 29b11 332t4
 32M9 UNS32 35r52 39r40 40r38 41r37 41r51 42r40 43r40 44r56 45r41 45r55 46r36
 . 47r44 48r49 48r63 49r52 50r52 56r40 68r38 69r16 70r20 88r40 102r37 102r51
 . 103r20 104r13 105r18 122r40 133r56 134r16 135r13 150r41 150r55 151r16 152r16

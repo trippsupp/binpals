@@ -130,7 +130,7 @@ procedure Binpals is
    -- Purpose: Prints the reversed binary value
    -- Parameters: Original: original value, Reversed: value to print
    ------------------------------------------------------------------
-   procedure PrintReversedBinary (Original, Reversed : UNS32) is
+   procedure PrintReversedBinary (Original : UNS32) is
       Binary : UNS32 := Original; -- binary value
       Bit : UNS32; -- running remainder
    begin
@@ -321,12 +321,5 @@ begin
       -- print pruned reversed binary
       PrintPrunedreversedBinary(Original); New_Line(3);
    end loop;
-
-   exception
-      when Data_Error => Put_Line("found invalid input");
-      when End_Error => Put_Line("end of file reached");
-      when Constraint_Error =>
-      put_line("constraint error: not typeUNS32");
-      when others => Put_Line("an error occurred.");
 
 end;

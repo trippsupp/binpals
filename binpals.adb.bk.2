@@ -322,11 +322,4 @@ begin
       PrintPrunedreversedBinary(Original); New_Line(3);
    end loop;
 
-   exception
-      when Data_Error => Put_Line("found invalid input");
-      when End_Error => Put_Line("end of file reached");
-      when Constraint_Error =>
-      put_line("constraint error: not typeUNS32");
-      when others => Put_Line("an error occurred.");
-
 end;
